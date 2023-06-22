@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design de Unhas: Transforme sua Paixão em Profissão</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+    </style>
+    <style>
+        :root {
+            --color-neutral-0: #0e0c0c;
+            --color-neutral-10: #86076a;
+            --color-neutral-30: #a8a29e;
+            --color-neutral-40: #f5f5f5;
+
+        }
+
+        * {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            letter-spacing: 1px;
+        }
+
+        main {
+            height: 80vh;
+        }
+
+        footer {
+            width: 100%;
+            color: var(--color-neutral-40);
+        }
+
+        .footer-link {
+            text-decoration: none;
+        }
+
+        #footer_content {
+
+            background-color: var(--color-neutral-10);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            padding: 7rem 3.5rem;
+            height: auto;
+
+        }
+
+        #footer_contacts h1 {
+            margin-bottom: 0.75rem;
+        }
+
+        #footer_social_media {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        #cadeado {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        #footer_social_media .footer-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.5rem;
+            width: 2.5rem;
+            color: var(--color-neutral-40);
+            border-radius: 50%;
+            transition: all 0.4s;
+        }
+
+        #footer_social_media .footer-link i {
+
+            font-size: 1.25rem;
+        }
+
+        #footer_social_media .footer-link:hover {
+            opacity: 0.8;
+        }
+
+        #instagram {
+            background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+        }
+
+
+        #whatsapp {
+            background-color: #25d366;
+        }
+
+        #input_group input {
+            all: unset;
+            padding: 0.75rem;
+            width: 100%;
+        }
+
+
+
+        .div {
+
+
+            display: inline-block;
+            border-radius: 20px;
+            width: 200px;
+            height: 360px;
+            box-shadow: 0px 0px 25px 0px rgba(40, 41, 40, 0.25);
+            margin: 5px;
+            padding: 20px;
+
+
+
+        }
+
+
+        #input_group button:hover {
+            opacity: 0.8;
+            background-color: var(--color-neutral-30 #a8a29e);
+        }
+
+        #footer_copyright {
+            display: flex;
+            justify-content: center;
+            background-color: var(--color-neutral-0);
+            font-size: 0.9rem;
+            padding: 1.5rem;
+            font-weight: 100;
+        }
+
+        @media screen and (max-width: 768px) {
+            #footer_content {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+        }
+
+        @media screen and (max-width: 426px) {
+            #footer_content {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 3rem 2rem;
+            }
+        }
+
+        @media screen and(max-width: 768px) {
+            .banner {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 3rem 2rem;
+            }
+        }
+
+        @media screen and(max-width: 426px) {
+            .banner {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 3rem 2rem;
+            }
+        }
+
+
+
+        .img01,
+        .img02,
+        .img03 {
+            width: 75%;
+
+        }
+
+        .titulo {
+            text-align: center;
+        }
+
+        .descritivo {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #textoo {
+           
+            display: inline-block;
+           justify-content: left;
+            border-radius: 20px;
+            width: 100%;
+            height: 250px;
+            box-shadow: 0px 0px 35px 0px rgba(22, 22, 22, 0.372);
+            margin: 5px;
+            padding: 20px;
+        }
+
+        .banner {
+            box-shadow: 0px 0px 35px 0px rgba(19, 19, 19, 0.656);
+
+            padding: 20px;
+            text-align: center;
+        }
+
+        .banner h1 {
+            color: #333;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        .banner p {
+            color: #777;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+
+        #btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #42df0e;
+            color: #fefefe;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+          
+            
+        }
+        #btn:hover {
+            background-color: rgb(195, 188, 191);
+            color:rgb(122, 120, 120);
+        }
+
+        #imgfooter1 {
+            margin: 6px;
+            padding: 8px;
+            width: 170px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="banner">
+        <h1>Curso designer de Unhas</h1>
+        <p><b>Descubra nossos cursos</b> e aproveite nossos pacotes promocionais! </p>
+    </div>
+
+
+    <div class="descritivo">
+
+        <div class="div">
+            <img class="img01" src="https://escoladesigndeunhas.com/wp-content/uploads/2023/03/benef-unhas-001.png">
+            <p>Apresentação dos tipos de Brocas</p>
+            <p>Fibra de Vidro</p>
+            <p>Alongamento em Gel na Tips</p>
+            <p>Como Montar o Molde</p>
+
+
+
+        </div>
+
+        <div class="div">
+            <img class="img02" src="https://escoladesigndeunhas.com/wp-content/uploads/2023/03/benef-unhas-003.png">
+            <p>Alongamento em Gel Moldado</p>
+            <p>Alongamento no molde F1 - Polygel</p>
+            <p>Unhas Sem Cabine Led/Uv- Acrilfix</p>
+            <p>Manutenção do Alongamento</p>
+        </div>
+
+        <div class="div">
+            <img class="img03" src="https://escoladesigndeunhas.com/wp-content/uploads/2023/03/bonus-unhas-04.png">
+            <p>Fidelize Cliente e tenha uma agenda cheia</p>
+
+        </div>
+
+
+
+
+        <div>
+
+        </div>
+
+    </div>
+    <div id="textoo">
+        
+        Tornar-se uma designer de unhas é uma escolha gratificante e empolgante, repleta de benefícios. Se você tem
+        paixão por arte, moda e beleza, esta profissão oferece uma oportunidade única de expressar sua criatividade e
+        transformar as unhas em verdadeiras obras de arte. Aqui estão alguns dos benefícios de se tornar uma designer de
+        unhas:
+
+        Criatividade ilimitada: Como designer de unhas, você terá a oportunidade de explorar e expressar sua
+        criatividade de maneiras infinitas. Cada unha é uma tela em branco, permitindo que você experimente uma
+        variedade de estilos, cores, padrões e técnicas. Você pode criar designs personalizados, acompanhar as últimas
+        tendências da moda e incorporar elementos artísticos únicos em suas criações.
+<div>
+        <button id="btn">Quero iniciar hoje!</button>
+        </div>
+</div>
+   
+
+
+
+    </div>
+    <footer class="footer_contentent">
+
+        <div id="footer_content">
+
+            <div>
+                
+                <div>
+                    <img id="imgfooter1" src="https://previmil.com.br/wp-content/uploads/2020/02/site-seguro.png" alt="Descrição da imagem">
+
+                </div>
+            </div>
+            
+            <div>
+                <p>Formas de pagamento</p>
+                <img id="imgfooter1" src="https://images.tcdn.com.br/img/editor/up/1103268/formasdepagamentovolk.png" alt="Descrição da imagem">
+
+            </div>
+
+            <div>
+                <p>vericado em</p>
+               <a href="https://www.sslshopper.com/ssl-checker.html?hostname"> <img id="imgfooter1" src="https://www.sslshopper.com/assets/templates/sslshopper2016/img/ssl-shopper-logo.svg" alt="Descrição da imagem"></a>
+
+            </div>
+
+           
+                    
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-list">
+
+
+    </div>
+
+
+
+</body>
+
+</html>
